@@ -40,6 +40,7 @@ const setTasks = (tasks) => {
   // delete item
   deleteItem.addEventListener("click", (event) => {
     const itemToBeDelete = event.target.id;
+    const removeItem = event.target.parentNode.remove();
     console.log(
       "🚀 ~ file: chapter-1.js ~ line 43 ~ deleteItem.addEventListener ~ itemToBeDelete",
       itemToBeDelete
